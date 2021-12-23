@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> 
+    <title>DojoWeather</title>
+</head>
+<body>
+
+<!-- top navigation -->
+
+<div class="nav1-container">
+    <div class="nav1">
+        <h1>DojoWeather</h1>
+        <p onclick="loading()" id="burbank">Burbank</p>
+        <p onclick="loading()" id="chicago">Chicago</p>
+        <p onclick="loading()" id="dallas">Dallas</p>
+    </div>
+</div>
+
+<!-- middle navigation -->
+
+<div class="nav2-container">
+    <div class="nav2">
+        <h1>San Jose</h1>
+        <p>
+            <label>show temperature in: </label>
+            <select name="temperature" onchange="changeUnit(this)">
+                <option value="view-c">°C</option>
+                <option value="view-f">°F</option>
+            </select>
+        </p>
+    </div>
+</div>
+<!-- columns -->
+
+<div id="forecast" class="column-container">
+    <div class="column" id="col-1">
+        <h2>Today</h2>
+        <img class="weather-icon" src="assets/some_rain.png" alt="">
+        <p>some rain</p>
+        <div class="unit-c redbluetemps">
+            <p class="temp" id="left-num">24°</p>
+            <p class="temp" id="right-num">18°</p>
+        </div>
+        <div class="unit-f redbluetemps">
+            <p class="temp" id="left-num">75°</p>
+            <p class="temp" id="right-num">64°</p>
+        </div>
+    </div>
+    <div class="column" id="col-2">
+        <h2>Today</h2>
+        <img class="weather-icon" src="assets/some_sun.png" alt="">
+        <p>some sun</p>
+        <div class="unit-c redbluetemps">
+            <p class="temp" id="left-num">22°</p>
+            <p class="temp" id="right-num">19°</p>
+        </div>
+        <div class="unit-f redbluetemps">
+            <p class="temp" id="left-num">71°</p>
+            <p class="temp" id="right-num">66°</p>
+        </div>
+    </div>
+    <div class="column" id="col-4">
+        <h2>Today</h2>
+        <img class="weather-icon" src="assets/some_clouds.png" alt="">
+        <p>some clouds</p>
+        <div class="unit-c redbluetemps">
+            <p class="temp" id="left-num">21°</p>
+            <p class="temp" id="right-num">15°</p>
+        </div>
+        <div class="unit-f redbluetemps">
+            <p class="temp" id="left-num">69°</p>
+            <p class="temp" id="right-num">59°</p>
+        </div>
+    </div>
+    <div class="column" id="col-4">
+        <h2>Today</h2>
+        <img class="weather-icon" src="assets/some_sun.png" alt="">
+        <p>some sun</p>
+        <div class="unit-c redbluetemps">
+            <p class="temp" id="left-num">25°</p>
+            <p class="temp" id="right-num">18°</p>
+        </div>
+        <div class="unit-f redbluetemps">
+            <p class="temp" id="left-num">77°</p>
+            <p class="temp" id="right-num">64°</p>
+        </div>
+    </div>
+</div>
+
+<!-- cookies -->
+<div class="cookie-container">
+    <div class="cookie-nav">
+        <img class="cookie-icon" src="assets\cookie.png" alt="">
+        <div>
+            <p>
+            Stop! Cookie Time!
+            </p>
+            <p>We use cookies (sadly not the edible ones) to personalize content an ads, to provide social media featrures and to analyze and our traffic. 
+                <a href="#">Read More</a>
+            </p>
+        </div>
+        <button onclick="removeAlert()">I Accept</button>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

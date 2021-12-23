@@ -1,0 +1,146 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+.nav1-container {
+    background-color: #8bc7ff;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: space-between;
+}
+
+.nav1 {
+    color:white;
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.nav1 h1{
+    margin-right: auto;
+    font-size: 40px;
+}
+
+.nav1 p {
+    padding-left: 100px;
+    font-size: 25px;
+}
+
+.nav2-container {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+
+.nav2 {
+    color:black;
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border-bottom: solid black 2px;
+}
+
+.nav2 h1 {
+    margin-right: auto;
+    font-size: 35px;
+}
+
+.nav2 p {
+    padding-left: 100px;
+    font-size: 20px;
+}
+
+.column-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.column {
+    margin-top: 20px;
+    width: 150px;
+    background-color: rgb(218, 218, 218);
+    text-align: center;
+}
+
+.column h2 {
+    margin-top: 10px;
+}
+
+.redbluetemps {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.redbluetemps p {
+    padding-left: 25px;
+    padding-right: 19px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.weather-icon {
+    width: 100px;
+    border-radius: 50%;
+}
+
+#left-num {
+    color: rgb(235, 0, 0);
+}
+
+#right-num {
+    color: rgb(11, 117, 255);
+}
+
+.cookie-container {
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}    
+
+.cookie-nav {
+    color:black;
+    width: 835px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border: solid black 2.5px;
+    justify-content: space-evenly;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgb(240, 240, 240);
+}
+.cookie-nav button {
+    width: 90px;
+    border: solid black 2px;
+    background-color: #8bc7ff;
+}
+
+.unit-f {
+    display: none;
+}
+
+.view-c .unit-c, .view-f .unit-f {
+    display: flex;
+}
+
+.view-c .unit-f, .view-f .unit-c {
+    display: none;
+}
